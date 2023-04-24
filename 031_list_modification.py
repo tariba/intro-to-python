@@ -72,6 +72,7 @@ print("Function: remove_item_from_list")
 
 def remove_item_from_list(the_list, item):
   # ...
+  the_list.remove(item)
   return the_list
 
 # If you have trouble here, make sure you're returning the
@@ -87,7 +88,8 @@ print("")
 print("Function: count_items_in_list")
 
 def count_items_in_list(the_list, item):
-  return # ...
+  count = the_list.count(item)
+  return count
 
 # Whereas here you'll need to return the result of the
 # function you call, not the list.
@@ -102,7 +104,8 @@ print("")
 print("Function: get_index_of_item")
 
 def get_index_of_item(the_list, item):
-  return # ...
+  index = the_list.index(item)
+  return index
 
 check_that_these_are_equal(
   get_index_of_item(['a', 'b', 'c'], 'b'), 1)
@@ -116,6 +119,7 @@ print("Function: reverse_list")
 
 def reverse_list(the_list):
   # ...
+  the_list.reverse()
   return the_list
 
 check_that_these_are_equal(
@@ -130,7 +134,8 @@ print("Function: list_length")
 
 # Note — it's the same as for strings!
 def list_length(the_list):
-  return # ...
+  length = len(the_list)
+  return length
 
 check_that_these_are_equal(
   list_length(['a', 'b', 'c']), 3)

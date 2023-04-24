@@ -80,8 +80,8 @@ print(f"2 // 3 = {floor_divided} (should be 0)")
 # == Exponentiation ==
 # Sometimes known as "2 to the power of 3"
 
-# expr = 2 ? 3
-# print(f"2 ? 3 = {expr} (should be 8)")
+expr = 2 ** 3
+print(f"2 ** 3 = {expr} (should be 8)")
 
 # There are many more operators in Python that you can
 # research. You're very welcome to try out a few below:

@@ -68,8 +68,8 @@ print(f"2 ? 3 = {divided} (should be 0.6666666666666666)")
 # == Modulus ==
 # Sometimes known as "remainder if we divide 3 by 2"
 
-# modulus = 3 ? 2
-# print(f"3 ? 2 = {modulus} (should be 1)")
+modulus = 3 % 2
+print(f"3 ? 2 = {modulus} (should be 1)")
 
 # == Floor division ==
 # Sometimes known as "division without remainder"

@@ -54,8 +54,8 @@ print(f"2 * 3 = {multiplied} (should be 6)")
 
 # == Subtraction ==
 
-# subtracted = 2 ? 3
-# print(f"2 ? 3 = {subtracted} (should be -1)")
+subtracted = 2 - 3
+print(f"2 - 3 = {subtracted} (should be -1)")
 
 # == Division ==
 

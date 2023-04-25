@@ -30,7 +30,42 @@ print("")
 print("Function: report_long_words")
 
 def report_long_words(words):
-  pass
+  filtered_words= filtered_words_by_length(words)
+  if filtered_words == [] :
+    return "These words are quite long: "
+  else:
+    long_words=long_words_list(filtered_words)
+    long_words_result = final_result(long_words)
+ 
+    return long_words_result
+
+def final_result (words):
+  result="These words are quite long:"
+  for item in words:
+    if item == words[-1]:
+      result += f" {item}"
+    else:
+      result += f" {item},"    
+  return result
+    
+def long_words_list(words):
+  long_words=[]
+  for item in words:
+    if len(item) > 15:
+      words = f"{item[0:15]}..."
+      long_words.append(words)
+    else:
+      long_words.append(item)
+  return long_words
+
+def filtered_words_by_length(words):
+  filtered_word=[]
+  for item in words:
+    if len(item) >=10 and "-" not in item:
+      filtered_word.append(item)
+  return filtered_word
+  
+  
 
 check_that_these_are_equal(
   report_long_words([
